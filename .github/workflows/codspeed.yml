@@ -23,10 +23,10 @@ jobs:
           bins: cargo-codspeed
 
       - name: Build the benchmark target(s)
-        run: cargo codspeed build
+        run: cargo codspeed build -p einsum-derive
 
       - name: Run the benchmarks
         uses: CodSpeedHQ/action@v2
         with:
-          run: cargo codspeed run
+          run: cargo codspeed run -p einsum-derive
           token: ${{ secrets.CODSPEED_TOKEN }}
