@@ -1,4 +1,4 @@
-use criterion::*;
+use codspeed_criterion_compat::*;
 use einsum_derive::einsum;
 use ndarray::*;
 use ndarray_linalg::*;
